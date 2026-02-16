@@ -6,10 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-      <header>
+  <header>
     <h1>Skill Swap</h1>
+    
+
     <nav>
     </nav>
+
   </header>
 
   <main>
@@ -25,9 +28,29 @@
       <button onclick="filterSkills('Career')">Career</button>
     </section>
 
+    <section id="skills-container"></section>
+
     <section class="skills-placeholder">
       <h2>Featured Skills</h2>
       <p>Skill listings will appear here in a future update.</p>
+    </section>
+
+    <section class="calculator">
+    <h2>Cost Calculator</h2>
+
+    <label>
+        Rate per Hour:
+        <input type="number" id="rateInput" />
+    </label>
+
+    <label>
+        Hours:
+        <input type="number" id="hoursInput" />
+    </label>
+
+    <button onclick="calculateCost()">Calculate Total</button>
+
+    <p id="totalResult"></p>
     </section>
   </main>
 
@@ -35,6 +58,7 @@
     <p>&copy; 2026 Skill Swap. All rights reserved.</p>
   </footer>
 
+  <script src="skillswap-functions.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
