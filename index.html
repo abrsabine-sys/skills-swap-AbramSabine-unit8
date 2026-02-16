@@ -52,6 +52,28 @@
 
     <p id="totalResult"></p>
     </section>
+
+    <section class="matcher">
+       <h2>Find My Match</h2>
+
+      <label>
+       Category:
+      <select id="matchCategory">
+        <option value="Programming">Programming</option>
+        <option value="Music">Music</option>
+        <option value="Career">Career</option>
+      </select>
+    </label>
+
+    <label>
+      Max Price:
+      <input type="number" id="maxPriceInput" />
+    </label>
+
+    <button onclick="findMatches()">Find My Match</button>
+
+    <div id="matchResults"></div>
+  </section>
   </main>
 
   <footer>

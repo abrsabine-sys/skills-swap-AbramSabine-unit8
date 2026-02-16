@@ -42,4 +42,34 @@ function calculateCost() {
         "Total Cost: $" + total;
 }
 
+function findMatches() {
+    const category = document.getElementById("matchCategory").value;
+    const maxPrice = Number(document.getElementById("maxPriceInput").value);
+
+    const userNeeds = {
+        category: category,
+        maxPrice: maxPrice
+    };
+
+    const matchedSkills = matchSkillsToUser(userNeeds, skills);
+
+    const resultsDiv = document.getElementById("matchResults");
+    resultsDiv.innerHTML = "";
+
+    if (matchedSkills.length === 0) {
+        resultsDiv.textContent = "No matching skills found.";
+        return;
+    }
+
+    matchedSkills.forEach(skill => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+            <h3>${skill.title}</h3>
+            <p>Category: ${skill.category}</p>
+            <p>Price: $${skill.price}</p>
+        `;
+        resultsDiv.appendChild(card);
+    });
+}
 
