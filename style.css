@@ -53,3 +53,12 @@ nav a {
     width: 200px;
 }
 
+.calculator {
+    margin-top: 30px;
+}
+
+.calculator input {
+    margin: 5px 0;
+    display: block;
+}
+
