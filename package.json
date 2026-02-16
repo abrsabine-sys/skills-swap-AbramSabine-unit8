@@ -4,8 +4,9 @@
   "description": "Skill Swap is a platform where college students can share and trade skills through tutoring, mentoring, and peer learning.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "jest"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abrsabine-sys/skills-swap-AbramSabine-unit8.git"
